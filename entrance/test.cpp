@@ -1,5 +1,5 @@
 #include <catch.hpp>
-#include <entrance.h>
+#include "entrance.h"
 
 TEST_CASE("Simple test") {
 
