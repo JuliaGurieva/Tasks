@@ -143,8 +143,7 @@ TEST_CASE("Stress", "[deque]") {
 
 TEST_CASE("Empty correctness") {
     // There are some ways to make deque empty
-    // We should test them all
-    // In some ways we can cause memory leak
+  
     const size_t test_size = 1e3;
     {
         // PushBack-PopBack case
@@ -161,7 +160,6 @@ TEST_CASE("Empty correctness") {
 
     {
         // PushBack-PopFront case
-        // this case is broken in my implementation
         Deque a;
         for (size_t idx = 0; idx < test_size; ++idx) {
             a.PushBack(idx);
